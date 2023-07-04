@@ -33,3 +33,8 @@
     - { role: geerlingguy.nginx, tags: [nginx] }
     - { role: geerlingguy.php, tags: [php] }
     - { role: wordpress, tags: [wordpress] }
+
+- hosts: haproxy
+  become: true
+  roles:
+    - { role: geerlingguy.haproxy, tags: [haproxy]}
